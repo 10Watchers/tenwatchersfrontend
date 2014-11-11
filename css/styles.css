@@ -4,4 +4,12 @@
 
 /* Buttons */
 .btn-shout { width:100%; }
-.btn-group { padding: 8px 12px; margin-right:5px; }
+.btn-group { padding: 10px 14px; margin-right:5px; margin-bottom:10px; }
+
+/* Button Group */
+.btn-group-duration { padding:0; width:100%; margin:-5px -2px 10px -2px; }
+
+.report-summary { width:100%; padding:10px; margin-bottom:10px; }
+.report-summary-high { background-color:#FFC8C8; border:1px solid #ebccd1; }
+.report-summary-medium { background-color:#FFE6B2; border:1px solid #D8C395; }
+.report-summary-low { background-color:#fcf8e3; border:1px solid gold; }
