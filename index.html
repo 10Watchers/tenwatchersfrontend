@@ -34,7 +34,7 @@
 
     <h4>Enter Your Phone Number</h4>
     <p>We'll send alerts via SMS to this number.</p>
-    <input class="phone">
+    <input id="phoneNumber" type="tel" class="phone form-control" style="width:150px;">
 
     <h4 style="margin-top:25px;">Select a Group</h4>
     <button type="button" class="btn btn-default btn-group">#HackathonDrones</button>
@@ -43,10 +43,16 @@
 
     <h4 style="margin-top:25px;">When should we alert you?</h4>
     <p>Notify me after
-        <select>
+        <select id="alertThreshold">
             <option>1</option>
             <option>2</option>
             <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
         </select>
     people report an event.
     </p>
@@ -55,9 +61,10 @@
 
     <h4>If your heartbeat stops, who should we notify?</h4>
     <p>If you run into trouble, we'll SMS to this phone number.</p>
-    <input>
-    <p>This is what we'll say:</p>
-    <input>
+    <input id="heartbeatAlertRecipientPhoneNumber" type="tel" class="phone form-control" style="width:150px;">
+
+    <p style="margin-top:15px;">This is what we'll say:</p>
+    <input id="heartbeatAlertMessage" class="form-control">
 
     <div style="margin-top:25px;">
         <button class="btn btn-primary">Sign Up</button>
