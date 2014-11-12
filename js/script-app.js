@@ -1,5 +1,10 @@
 $(document).ready( function() {
 
+    // PROD / DEV SETTINGS
+    // -----------------------------------------------------------------------------------------------------------------
+    var hostname = '';
+    //var hostname = 'http://d7nw66m1rrwk4.cloudfront.net';
+
     // Initialize the page
     // -----------------------------------------------------------------------------------------------------------------
     // Hide all pages except Watch
@@ -62,7 +67,11 @@ $(document).ready( function() {
             map.disableMapNavigation();
         });
 
-
+    // Download Data
+    // -----------------------------------------------------------------------------------------------------------------
+    $.get( hostname + '/api/group', function( data ) {
+        console.log('data', data);
+    });
 
 
 });
