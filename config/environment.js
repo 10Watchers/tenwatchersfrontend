@@ -16,6 +16,17 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    // See https://github.com/rwjblue/ember-cli-content-security-policy
+    contentSecurityPolicy: {
+      'default-src': "*",
+      //'script-src': "'self' 'liveReloadPort' static.twilio.com 'unsafe-eval' 'unsafe-inline'",
+      'script-src': "'self' * 'unsafe-eval' 'unsafe-inline'",
+      'font-src': "'self'",
+      'connect-src': "'self' *",
+      'img-src': "'self' *",
+      'style-src': "'self' * 'unsafe-inline'"
     }
   };
 
