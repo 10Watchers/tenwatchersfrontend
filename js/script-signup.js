@@ -28,4 +28,10 @@ $(document).ready( function() {
     $('#tabGroupMap').on('click', showTabGroupMap);
     $('#tabGroupMapBody').hide();
 
+    // Handle Events
+    // -----------------------------------------------------------------------------------------------------------------
+    $('.btn-signUp').on('click', function() {
+        window.location.href = "app.html";
+    });
+
 });

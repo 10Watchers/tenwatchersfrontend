@@ -3,8 +3,8 @@ $(document).ready( function() {
     // Initialize the page
     // -----------------------------------------------------------------------------------------------------------------
     // Hide all pages except Watch
-    $('.body-watch').hide();
-    $('.body-shout').show();
+    $('.body-watch').show();
+    $('.body-shout').hide();
     $('.body-heartbeat').hide();
 
     // Setup Major Pages
@@ -62,11 +62,7 @@ $(document).ready( function() {
             map.disableMapNavigation();
         });
 
-    // Handle Events
-    // -----------------------------------------------------------------------------------------------------------------
-    $('.btn-signUp').on('click', function() {
-        window.location="app.html";
-    });
+
 
 
 });
