@@ -73,5 +73,11 @@ $(document).ready( function() {
         console.log('data', data);
     });
 
+    // Handle Events
+    // -----------------------------------------------------------------------------------------------------------------
+    $('.btn-heartbeat').on('click', function() {
+        window.location.href = "heartbeat.html";
+    });
+
 
 });
