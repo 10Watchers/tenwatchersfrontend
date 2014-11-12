@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f57c7ef-9c69-4588-a1ae-dd46f204bb5d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/script.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/watch.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <ignored path="10watchers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0" vertical-offset="750" max-vertical-offset="2745">
-              <caret line="74" column="40" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="40" />
+            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="2745">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -42,8 +39,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1923077" vertical-offset="0" max-vertical-offset="780">
-              <caret line="10" column="57" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.32692307" vertical-offset="0" max-vertical-offset="780">
+              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -288,16 +285,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0" vertical-offset="750" max-vertical-offset="2745">
-          <caret line="74" column="40" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="40" />
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="2745">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1923077" vertical-offset="0" max-vertical-offset="780">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.32692307" vertical-offset="0" max-vertical-offset="780">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
           <folding />
         </state>
       </provider>

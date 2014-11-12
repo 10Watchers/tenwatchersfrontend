@@ -7,6 +7,16 @@ $(document).ready( function() {
     $('.body-heartbeat').hide();
 
     // Setup Group Tabs
+    var showTabGroupSummary = function() {
+        $('#tabGroupSummaryBody').show();
+        $('#tabGroupMapBody').hide();
+    };
+
+    var showTabGroupMap = function() {
+        $('#tabGroupSummaryBody').hide();
+        $('#tabGroupMapBody').show();
+    };
+
     $('#tabGroupSummary').addClass('active');
     $('#tabGroupSummary').on('click', showTabGroupSummary);
     $('#tabGroupSummaryBody').show();
@@ -25,16 +35,5 @@ $(document).ready( function() {
             map.disableMapNavigation();
         });
 
-    // Handle Events
-    // -----------------------------------------------------------------------------------------------------------------
-    var showTabGroupSummary = function() {
-        $('#tabGroupSummaryBody').show();
-        $('#tabGroupMapBody').hide();
-    };
-
-    var showTabGroupMap = function() {
-        $('#tabGroupSummaryBody').hide();
-        $('#tabGroupMapBody').show();
-    };
 
 });
