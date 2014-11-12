@@ -4,13 +4,175 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="0; url=watch.html" />
     <title>Atrocity Watch</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.11/esri/css/esri.css">
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="http://js.arcgis.com/3.11/"></script>
 </head>
 <body>
 
+<!-- NavBar ################################################# -->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Atrocity Watcher</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Watch</a></li>
+                <li><a href="#">Shout</a></li>
+                <li><a href="#">Say I'm Ok</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!-- NavBar ################################################# -->
+
+<div class="body">
+
+    <!-- WATCH ################################################# -->
+    <div class="body-watch">
+        <button type="button" class="btn btn-danger btn-shout">Shout</button>
+
+        <h3>Watch</h3>
+        <p>See what's happening around you.</p>
+
+        <ul class="nav nav-tabs nav-tabs-groups" role="tablist">
+            <li role="presentation" class="active"><a href="#">My Groups</a></li>
+            <li role="presentation"><a href="#">All Groups</a></li>
+            <li role="presentation"><a href="#">My Location</a></li>
+        </ul>
+
+        <button type="button" class="btn btn-default btn-group">#HackathonDrones</button>
+        <button type="button" class="btn btn-default btn-group">#VenetianTheft</button>
+        <button type="button" class="btn btn-default btn-group">#VegasCrime</button>
+
+        <hr>
+
+        <ul class="nav nav-tabs nav-tabs-groups" role="tablist">
+            <li id="tabGroupSummary" role="presentation"><a href="#">Summary</a></li>
+            <li id="tabGroupMap" role="presentation"><a href="#">Map</a></li>
+        </ul>
+
+        <div class="well">
+
+            <div id="tabGroupSummaryBody">
+                <div class="btn-group btn-group-duration">
+                    <button type="button" class="btn btn-default">Last 5 Minutes</button>
+                    <button type="button" class="btn btn-default">Last 1 Hour</button>
+                    <button type="button" class="btn btn-default">Last 4 Hours</button>
+                </div>
+
+                <div class="report-summary report-summary-high">5 High Alerts</div>
+                <div class="report-summary report-summary-medium">2 Medium Alerts</div>
+                <div class="report-summary report-summary-low">1 Low Alert</div>
+            </div>
+
+            <div id="tabGroupMapBody">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SHOUT ################################################# -->
+    <div class="body-shout">
+        <button type="button" class="btn btn-danger btn-shout">Shout</button>
+
+        <h3>Shout</h3>
+        <p>See what's happening around you.</p>
+
+        <ul class="nav nav-tabs nav-tabs-groups" role="tablist">
+            <li role="presentation" class="active"><a href="#">My Groups</a></li>
+            <li role="presentation"><a href="#">All Groups</a></li>
+            <li role="presentation"><a href="#">My Location</a></li>
+        </ul>
+
+        <button type="button" class="btn btn-default btn-group">#HackathonDrones</button>
+        <button type="button" class="btn btn-default btn-group">#VenetianTheft</button>
+        <button type="button" class="btn btn-default btn-group">#VegasCrime</button>
+
+        <hr>
+
+        <ul class="nav nav-tabs nav-tabs-groups" role="tablist">
+            <li role="presentation" class="active"><a href="#">Summary</a></li>
+            <li role="presentation"><a href="#">Map</a></li>
+        </ul>
+
+        <div class="well">
+
+            <div class="btn-group btn-group-duration">
+                <button type="button" class="btn btn-default">Last 5 Minutes</button>
+                <button type="button" class="btn btn-default">Last 1 Hour</button>
+                <button type="button" class="btn btn-default">Last 4 Hours</button>
+            </div>
+
+            <div class="report-summary report-summary-high">5 High Alerts</div>
+            <div class="report-summary report-summary-medium">2 Medium Alerts</div>
+            <div class="report-summary report-summary-low">1 Low Alert</div>
+        </div>
+    </div>
+
+    <!-- HEARTBEAT ################################################# -->
+    <div class="body-heartbeat">
+        <button type="button" class="btn btn-danger btn-shout">Shout</button>
+
+        <h3>Say I'm OK</h3>
+        <p>See what's happening around you.</p>
+
+        <ul class="nav nav-tabs nav-tabs-groups" role="tablist">
+            <li role="presentation" class="active"><a href="#">My Groups</a></li>
+            <li role="presentation"><a href="#">All Groups</a></li>
+            <li role="presentation"><a href="#">My Location</a></li>
+        </ul>
+
+        <button type="button" class="btn btn-default btn-group">#HackathonDrones</button>
+        <button type="button" class="btn btn-default btn-group">#VenetianTheft</button>
+        <button type="button" class="btn btn-default btn-group">#VegasCrime</button>
+
+        <hr>
+
+        <ul class="nav nav-tabs nav-tabs-groups" role="tablist">
+            <li role="presentation" class="active"><a href="#">Summary</a></li>
+            <li role="presentation"><a href="#">Map</a></li>
+        </ul>
+
+        <div class="well">
+
+            <div class="btn-group btn-group-duration">
+                <button type="button" class="btn btn-default">Last 5 Minutes</button>
+                <button type="button" class="btn btn-default">Last 1 Hour</button>
+                <button type="button" class="btn btn-default">Last 4 Hours</button>
+            </div>
+
+            <div class="report-summary report-summary-high">5 High Alerts</div>
+            <div class="report-summary report-summary-medium">2 Medium Alerts</div>
+            <div class="report-summary report-summary-low">1 Low Alert</div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-2.1.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
