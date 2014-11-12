@@ -3,29 +3,30 @@ $(document).ready( function() {
     // Initialize the page
     // -----------------------------------------------------------------------------------------------------------------
     // Hide all pages except Watch
+    $('.body-watch').hide();
     $('.body-shout').hide();
-    $('.body-heartbeat').hide();
+    $('.body-heartbeat').show();
 
     // Format phone numbers
     //$('.phone').inputmask("(999) 999-9999");
 
     // Setup Major Pages
     var showWatchPage = function() {
-        $('#body-watch').show();
-        $('#body-shout').hide();
-        $('#body-heartbeat').hide();
+        $('.body-watch').show();
+        $('.body-shout').hide();
+        $('.body-heartbeat').hide();
     };
 
     var showShoutPage = function() {
-        $('#body-watch').hide();
-        $('#body-shout').show();
-        $('#body-heartbeat').hide();
+        $('.body-watch').hide();
+        $('.body-shout').show();
+        $('.body-heartbeat').hide();
     };
 
     var showHeartbeatPage = function() {
-        $('#body-watch').hide();
-        $('#body-shout').hide();
-        $('#body-heartbeat').show();
+        $('.body-watch').hide();
+        $('.body-shout').hide();
+        $('.body-heartbeat').show();
     };
 
     $('#nav-watch').on('click', showWatchPage);
