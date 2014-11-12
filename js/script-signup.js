@@ -6,6 +6,9 @@ $(document).ready( function() {
     $('.body-shout').hide();
     $('.body-heartbeat').hide();
 
+    // Format phone numbers
+    $('.phone').inputmask("(999) 999-9999");
+
     // Setup Group Tabs
     var showTabGroupSummary = function() {
         $('#tabGroupSummaryBody').show();
@@ -24,16 +27,5 @@ $(document).ready( function() {
     $('#tabGroupMap').removeClass('active');
     $('#tabGroupMap').on('click', showTabGroupMap);
     $('#tabGroupMapBody').hide();
-
-        // Include ESRI Maps
-        require(["esri/map", "dojo/domReady!"], function(Map) {
-            var map = new Map("map", {
-                center: [-118, 34.5],
-                zoom: 8,
-                basemap: "topo"
-            });
-            map.disableMapNavigation();
-        });
-
 
 });
