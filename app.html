@@ -100,25 +100,21 @@
         <button type="button" class="btn btn-default btn-group">#VenetianTheft</button>
         <button type="button" class="btn btn-default btn-group">#VegasCrime</button>
 
-        <hr>
 
-        <ul class="nav nav-tabs nav-tabs-groups" role="tablist">
-            <li role="presentation" class="active"><a href="#">Summary</a></li>
-            <li role="presentation"><a href="#">Map</a></li>
-        </ul>
+        <h4 style="margin-top:25px;">How severe is your event?</h4>
 
-        <div class="well">
+        <button type="button" style="width:100px;" class="btn btn-default btn-group">Low</button>
+        <button type="button" style="width:100px;" class="btn btn-default btn-group">Medium</button>
+        <button type="button" style="width:100px;" class="btn btn-default btn-group">High</button>
 
-            <div class="btn-group btn-group-duration">
-                <button type="button" class="btn btn-default">Last 5 Minutes</button>
-                <button type="button" class="btn btn-default">Last 1 Hour</button>
-                <button type="button" class="btn btn-default">Last 4 Hours</button>
-            </div>
+        <h4 style="margin-top:25px;">OPTIONAL: Add a note to share</h4>
 
-            <div class="report-summary report-summary-high">5 High Alerts</div>
-            <div class="report-summary report-summary-medium">2 Medium Alerts</div>
-            <div class="report-summary report-summary-low">1 Low Alert</div>
+        <input type="text" class="form-control">
+
+        <div style="margin-top:15px;">
+            <button class="btn btn-primary">Shout It</button>
         </div>
+
     </div>
 
     <!-- HEARTBEAT ################################################# -->
@@ -128,10 +124,17 @@
         <h3>Heartbeat</h3>
         <p>If something happens, let your loved ones know instantly.</p>
 
-        <h4>Use Heartbeat if</h4>
+        <h4>How It Works</h4>
+        <p>If you worry you may be in trouble and may not be able to let someone know when something bad happens, use
+        heartbeat. Start by visting any URL below.  When you want to gracefully stop your heartbeat without signaling
+        an emergency, simply click <strong>STOP</strong> below.</p>
         <p style="font-style:italic;">We'll notify (XXX) XXX-XXXX if your heartbeat stops.</p>
 
-        <input type="text" class="form-input">
+        <h4>Start your heartbeat by visiting a URL</h4>
+        <p style="font-style:italic;">No http:// is necessary</p>
+        <input type="text" placeholder="e.g. weather.gov" class="form-control">
+
+        <button style="margin-top:15px;" class="btn btn-primary">Start Your Heartbeat</button>
     </div>
 </div>
 

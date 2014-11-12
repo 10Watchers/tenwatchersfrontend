@@ -4,11 +4,8 @@ $(document).ready( function() {
     // -----------------------------------------------------------------------------------------------------------------
     // Hide all pages except Watch
     $('.body-watch').hide();
-    $('.body-shout').hide();
-    $('.body-heartbeat').show();
-
-    // Format phone numbers
-    //$('.phone').inputmask("(999) 999-9999");
+    $('.body-shout').show();
+    $('.body-heartbeat').hide();
 
     // Setup Major Pages
     var showWatchPage = function() {
@@ -32,6 +29,9 @@ $(document).ready( function() {
     $('#nav-watch').on('click', showWatchPage);
     $('#nav-shout').on('click', showShoutPage);
     $('#nav-heartbeat').on('click', showHeartbeatPage);
+
+    // Shout button links to Shout page
+    $('.btn-shout').on('click', showShoutPage);
 
     // Setup Group Tabs
     var showTabGroupSummary = function() {
@@ -62,6 +62,11 @@ $(document).ready( function() {
             map.disableMapNavigation();
         });
 
+    // Handle Events
+    // -----------------------------------------------------------------------------------------------------------------
+    $('.btn-signUp').on('click', function() {
+        window.location="app.html";
+    });
 
 
 });
