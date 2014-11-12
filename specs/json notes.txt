@@ -1,0 +1,14 @@
+POST /user
+{
+ 	phoneNumber: 602
+}
+
+
+{
+	user: 5
+	phoneNumber: (528) 349-3434,
+	groupName: xyz,
+	alertThreshold: 5,
+	heartbeatAlertRecipientPhoneNumber: (528) 349-3434
+	heartbeatAlertMessage: xyz
+}
