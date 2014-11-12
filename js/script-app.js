@@ -9,6 +9,29 @@ $(document).ready( function() {
     // Format phone numbers
     //$('.phone').inputmask("(999) 999-9999");
 
+    // Setup Major Pages
+    var showWatchPage = function() {
+        $('#body-watch').show();
+        $('#body-shout').hide();
+        $('#body-heartbeat').hide();
+    };
+
+    var showShoutPage = function() {
+        $('#body-watch').hide();
+        $('#body-shout').show();
+        $('#body-heartbeat').hide();
+    };
+
+    var showHeartbeatPage = function() {
+        $('#body-watch').hide();
+        $('#body-shout').hide();
+        $('#body-heartbeat').show();
+    };
+
+    $('#nav-watch').on('click', showWatchPage);
+    $('#nav-shout').on('click', showShoutPage);
+    $('#nav-heartbeat').on('click', showHeartbeatPage);
+
     // Setup Group Tabs
     var showTabGroupSummary = function() {
         $('#tabGroupSummaryBody').show();
@@ -37,6 +60,7 @@ $(document).ready( function() {
             });
             map.disableMapNavigation();
         });
+
 
 
 });
